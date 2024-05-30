@@ -1,0 +1,28 @@
+{
+  "name": "netlify-astro-example",
+  "description": "x",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "dev:netlify": "BROWSER=0 netlify dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/netlify": "^5.2.1",
+    "@astrojs/node": "^8.2.5",
+    "@dmno/astro-integration": "link:../../../packages/integrations/astro",
+    "astro": "^4.9.2",
+    "dmno": "link:../../../packages/core",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@dmno/netlify-platform": "link:../../../packages/platforms/netlify",
+    "netlify-cli": "^17.25.0"
+  },
+  "packageManager": "pnpm@9.1.4+sha256.30a1801ac4e723779efed13a21f4c39f9eb6c9fbb4ced101bce06b422593d7c9"
+}

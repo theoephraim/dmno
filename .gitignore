@@ -1,5 +1,8 @@
 node_modules
 dist
+!packages/core/dist
+!packages/platforms/netlify/dist
+!packages/integrations/astro/dist
 *.ignore
 
 .DS_Store

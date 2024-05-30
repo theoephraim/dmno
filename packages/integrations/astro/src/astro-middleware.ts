@@ -1,4 +1,4 @@
-import 'dmno/load';
+import 'dmno/inject';
 import { MiddlewareHandler } from 'astro';
 
 const sensitiveItemKeys = (globalThis as any)._DMNO_SENSITIVE_KEYS as Array<string>;

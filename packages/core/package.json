@@ -40,8 +40,11 @@
     "./cli-lib": {
       "default": "./dist/cli/plugin-cli-lib.mjs"
     },
-    "./load": {
-      "default": "./dist/app-init/auto-load-global.mjs"
+    "./injector": {
+      "default": "./dist/app-init/dmno-globals-injector.mjs"
+    },
+    "./inject": {
+      "default": "./dist/app-init/inject-dmno-globals.mjs"
     }
   },
   "files": [
@@ -54,6 +57,12 @@
       ],
       "cli-lib": [
         "./dist/cli/plugin-cli-lib.d.mts"
+      ],
+      "injector": [
+        "./dist/app-init/dmno-globals-injector.d.mts"
+      ],
+      "inject": [
+        "./dist/app-init/inject-dmno-globals.d.mts"
       ]
     }
   },

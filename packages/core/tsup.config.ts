@@ -3,7 +3,8 @@ import { defineConfig } from 'tsup';
 export default defineConfig({
   entry: [ // Entry point(s)
     'src/index.ts', // main lib, users will import from here
-    'src/app-init/auto-load-global.ts', // import used in node apps to load into global DMNO_CONFIG
+    'src/app-init/dmno-globals-injector.ts', // function used to inject dmno globals
+    'src/app-init/inject-dmno-globals.ts', // exports inject function and automatically calls it once
     'src/cli/cli-executable.ts', // cli that gets run via `dmno` command
     'src/cli/plugin-cli-lib.ts', // helpers used to create clis for dmno plugins
   ], 

@@ -1,0 +1,11 @@
+[build]
+base = 'example-repo/packages/astro-netlify'
+
+[build.environment]
+BUILD_VAR = 'netlify-toml-build-value'
+
+[context.dev]
+CONTEXT_VAR = 'netlify-toml-dev-context-value'
+
+[[plugins]]
+package = "./node_modules/@dmno/netlify-platform/dist/build-plugin"
